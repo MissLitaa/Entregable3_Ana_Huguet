@@ -22,17 +22,17 @@ public class playerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.X))
         {
-            transform.localScale += new Vector3(scaleX, transform.localScale.y, transform.localScale.z);
+            transform.localScale += new Vector3(scaleX, 0, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Y))
         {
-            transform.localScale += new Vector3(transform.localScale.x, scaleY, transform.localScale.z);
+            transform.localScale += new Vector3(0, scaleY, 0);
         }
 
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            transform.localScale += new Vector3(transform.localScale.x, transform.localScale.y, scaleZ);
+            transform.localScale += new Vector3(0, 0, scaleZ);
         }
 
     }
